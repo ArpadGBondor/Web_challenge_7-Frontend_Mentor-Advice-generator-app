@@ -1,4 +1,5 @@
 import React from 'react';
+import './styles/colors.css';
 import './styles/index.css';
 import App from './App';
 

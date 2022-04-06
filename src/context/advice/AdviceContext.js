@@ -16,10 +16,12 @@ export const AlertProvider = ({ children }) => {
 
     const newAdvice = async () => {
         dispatch({ type: SET_LOADING });
-
-        const { data } = await axios.get(`https://api.adviceslip.com/advice`);
-
-        dispatch({ type: SET_ADVICE, payload: data.slip });
+        try {
+            const { data } = await axios.get(`https://api.adviceslip.com/advice`);
+            dispatch({ type: SET_ADVICE, payload: data.slip });
+        } catch (error) {
+            dispatch({ type: SET_ADVICE, payload: { id: 404, advice: ' - No advice found. - ' } });
+        }
     };
 
     return (
