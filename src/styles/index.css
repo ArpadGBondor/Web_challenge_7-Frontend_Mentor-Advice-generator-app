@@ -1,13 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
 body {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
-        'Droid Sans', 'Helvetica Neue', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Manrope', sans-serif;
+    font-size: 28px;
+    background: var(--color-dark-blue);
+    color: var(--color-light-cyan);
 }
 
-code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+hr {
+    border-color: var(--color-grayish-blue);
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card {
+    background: var(--color-dark-grayish-blue);
+    margin: 25px;
+    padding: 50px;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+}
+
+.card-title {
+    color: var(--color-neon-green);
+}
+
+.card-content {
+    margin-bottom: 25px;
+}
+
+.card-footer {
+    display: inline-flex;
+    background: var(--color-neon-green);
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -30px;
+    left: calc(50% - 30px);
 }
 
 .attribution {
@@ -15,5 +54,5 @@ code {
     text-align: center;
 }
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: var(--color-neon-green);
 }

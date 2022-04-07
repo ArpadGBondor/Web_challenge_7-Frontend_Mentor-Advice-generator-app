@@ -5,8 +5,10 @@ import Footer from './components/Footer';
 function App() {
     return (
         <AlertProvider>
-            <Advice />
-            <Footer />
+            <div className="container">
+                <Advice />
+                <Footer />
+            </div>
         </AlertProvider>
     );
 }

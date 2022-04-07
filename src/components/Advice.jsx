@@ -16,6 +16,7 @@ function Advice() {
         <div className="card">
             <div className="card-title">Advice #{id}</div>
             <div className="card-content">"{advice}"</div>
+            <hr />
             <div className="card-footer">
                 <Button onClick={() => newAdvice()} />
             </div>
