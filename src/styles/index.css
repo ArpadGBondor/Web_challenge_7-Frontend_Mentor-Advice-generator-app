@@ -7,46 +7,88 @@ body {
     background: var(--color-dark-blue);
     color: var(--color-light-cyan);
 }
-
-hr {
-    border-color: var(--color-grayish-blue);
+footer {
+    position: absolute;
+    bottom: 0px;
 }
 
 .container {
-    min-height: 100vh;
+    min-height: calc(100vh - 100px);
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
+    padding: 40px 0 60px;
+    position: relative;
 }
 
 .card {
     background: var(--color-dark-grayish-blue);
     margin: 25px;
     padding: 50px;
-    border-radius: 15px;
+    border-radius: 14px;
     text-align: center;
     position: relative;
+    max-width: 450px;
 }
 
 .card-title {
     color: var(--color-neon-green);
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-weight: 200;
 }
 
 .card-content {
-    margin-bottom: 25px;
+    margin: 25px 0 50px;
+}
+
+.horizontal {
+    height: 0px;
+    border: 0px;
+    border-top: 1px solid var(--color-grayish-blue);
+    position: relative;
+    overflow: visible;
+    margin: 25px 0;
+}
+
+.horizontal .shadow {
+    background: var(--color-dark-grayish-blue);
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    top: calc(50% - 10px);
+    left: calc(50% - 25px);
+}
+
+.horizontal .vertical {
+    border: 0px;
+    width: 6px;
+    height: 16px;
+    background: var(--color-light-cyan);
+    position: absolute;
+    display: block;
+    top: calc(50% - 8px);
+    border-radius: 10px;
+    left: calc(50% - 10px);
+}
+
+.vertical + .vertical {
+    left: calc(50% + 4px);
 }
 
 .card-footer {
     display: inline-flex;
     background: var(--color-neon-green);
-    height: 60px;
-    width: 60px;
+    height: 65px;
+    width: 65px;
     border-radius: 50%;
     justify-content: center;
     align-items: center;
     position: absolute;
-    bottom: -30px;
-    left: calc(50% - 30px);
+    bottom: -32.5px;
+    left: calc(50% - 32.5px);
 }
 
 .attribution {

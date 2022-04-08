@@ -1,6 +1,7 @@
 import React, { useContext, useEffect } from 'react';
 import AdviceContext from '../context/advice/AdviceContext';
 import Button from './Button';
+import HorizontalLine from './layout/HorizontalLine';
 
 function Advice() {
     const { id, advice, loading, newAdvice } = useContext(AdviceContext);
@@ -16,7 +17,7 @@ function Advice() {
         <div className="card">
             <div className="card-title">Advice #{id}</div>
             <div className="card-content">"{advice}"</div>
-            <hr />
+            <HorizontalLine />
             <div className="card-footer">
                 <Button onClick={() => newAdvice()} />
             </div>
