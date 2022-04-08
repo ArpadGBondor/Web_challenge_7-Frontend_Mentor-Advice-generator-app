@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Web_challenge_7-Frontend_Mentor-Advice-generator-app/static/css/main.bd60409d.css",
+    "main.css": "/Web_challenge_7-Frontend_Mentor-Advice-generator-app/static/css/main.a5a53dfb.css",
     "main.js": "/Web_challenge_7-Frontend_Mentor-Advice-generator-app/static/js/main.b90c9dbc.js",
     "index.html": "/Web_challenge_7-Frontend_Mentor-Advice-generator-app/index.html",
     "static/media/icon-dice.svg": "/Web_challenge_7-Frontend_Mentor-Advice-generator-app/static/media/icon-dice.08691e4c24c11b5ba564e06b1f6bcbf3.svg",
-    "main.bd60409d.css.map": "/Web_challenge_7-Frontend_Mentor-Advice-generator-app/static/css/main.bd60409d.css.map",
+    "main.a5a53dfb.css.map": "/Web_challenge_7-Frontend_Mentor-Advice-generator-app/static/css/main.a5a53dfb.css.map",
     "main.b90c9dbc.js.map": "/Web_challenge_7-Frontend_Mentor-Advice-generator-app/static/js/main.b90c9dbc.js.map"
   },
   "entrypoints": [
-    "static/css/main.bd60409d.css",
+    "static/css/main.a5a53dfb.css",
     "static/js/main.b90c9dbc.js"
   ]
 }
