@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Web_challenge_7-Frontend_Mentor-Advice-generator-app/static/css/main.ba5d25dc.css",
-    "main.js": "/Web_challenge_7-Frontend_Mentor-Advice-generator-app/static/js/main.6ad44e33.js",
+    "main.css": "/Web_challenge_7-Frontend_Mentor-Advice-generator-app/static/css/main.bd60409d.css",
+    "main.js": "/Web_challenge_7-Frontend_Mentor-Advice-generator-app/static/js/main.b90c9dbc.js",
     "index.html": "/Web_challenge_7-Frontend_Mentor-Advice-generator-app/index.html",
     "static/media/icon-dice.svg": "/Web_challenge_7-Frontend_Mentor-Advice-generator-app/static/media/icon-dice.08691e4c24c11b5ba564e06b1f6bcbf3.svg",
-    "main.ba5d25dc.css.map": "/Web_challenge_7-Frontend_Mentor-Advice-generator-app/static/css/main.ba5d25dc.css.map",
-    "main.6ad44e33.js.map": "/Web_challenge_7-Frontend_Mentor-Advice-generator-app/static/js/main.6ad44e33.js.map"
+    "main.bd60409d.css.map": "/Web_challenge_7-Frontend_Mentor-Advice-generator-app/static/css/main.bd60409d.css.map",
+    "main.b90c9dbc.js.map": "/Web_challenge_7-Frontend_Mentor-Advice-generator-app/static/js/main.b90c9dbc.js.map"
   },
   "entrypoints": [
-    "static/css/main.ba5d25dc.css",
-    "static/js/main.6ad44e33.js"
+    "static/css/main.bd60409d.css",
+    "static/js/main.b90c9dbc.js"
   ]
 }
