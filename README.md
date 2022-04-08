@@ -1,3 +1,7 @@
+# [My Solution](https://arpadgbondor.github.io/Web_challenge_7-Frontend_Mentor-Advice-generator-app/)
+
+------------------------------
+
 # Frontend Mentor - Advice generator app
 
 ![Design preview for the Advice generator app coding challenge](./starter/design/desktop-preview.jpg)
