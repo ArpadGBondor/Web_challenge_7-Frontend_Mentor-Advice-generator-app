@@ -1,11 +1,11 @@
 import React from 'react';
 import Dice from '../assets/icon-dice.svg';
 
-function Button({ onClick }) {
+function Button({ onClick, loading }) {
     return (
-        <div className="btn next-advice" onClick={onClick}>
+        <button className="btn next-advice" onClick={onClick}>
             <img src={Dice} alt="Dice" />
-        </div>
+        </button>
     );
 }
 

@@ -12,11 +12,6 @@ footer {
     bottom: 0px;
 }
 
-img {
-    margin: 0;
-    padding: 0;
-}
-
 .container {
     min-height: calc(100vh - 60px);
     padding: 0px 0 60px;
@@ -43,6 +38,7 @@ img {
     text-transform: uppercase;
     letter-spacing: 0.2rem;
     font-weight: 200;
+    margin: 0;
 }
 
 .card-content {
@@ -84,7 +80,6 @@ img {
 }
 
 .card-footer {
-    display: inline-flex;
     background: var(--color-neon-green);
     height: 65px;
     width: 65px;
@@ -96,12 +91,51 @@ img {
     left: calc(50% - 32.5px);
 }
 
+.btn {
+    display: block;
+    background: #0000;
+    border: 0px;
+    margin: 0;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border-radius: 4px;
+}
+
+.btn:active,
+.btn:focus {
+    outline: none;
+    box-shadow: 0px 0px 3px 3px rgba(255, 255, 255, 0.8), 0px 0px 6px 6px rgba(255, 255, 255, 0.4);
+    background: #fff;
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
 }
 .attribution a {
     color: var(--color-neon-green);
+}
+
+.spin {
+    animation: spin 1.2s infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0) scale(1);
+        animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+    50% {
+        transform: rotate(900deg) scale(0.98);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    100% {
+        transform: rotate(1800deg) scale(1);
+    }
 }
 
 @media screen and (min-width: 900px) {

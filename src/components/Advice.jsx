@@ -14,14 +14,14 @@ function Advice() {
     );
 
     return (
-        <div className="card">
-            <div className="card-title">Advice #{id}</div>
+        <main className="card">
+            <h1 className="card-title">Advice #{id}</h1>
             <div className="card-content">"{advice}"</div>
             <HorizontalLine />
-            <div className="card-footer">
-                <Button onClick={() => newAdvice()} />
+            <div className={`card-footer${loading ? ' spin' : ''}`}>
+                <Button onClick={() => newAdvice()} loading={loading} />
             </div>
-        </div>
+        </main>
     );
 }
 
