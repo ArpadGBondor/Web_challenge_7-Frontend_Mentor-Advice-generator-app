@@ -7,33 +7,43 @@ import { SET_ADVICE, SET_LOADING } from '../types';
 const AdviceContext = createContext();
 
 export const AlertProvider = ({ children }) => {
-    const initialState = {
-        id: 0,
-        advice: '',
-        loading: true,
-    };
-    const [state, dispatch] = useReducer(adviceReducer, initialState);
+  const initialState = {
+    id: 0,
+    advice: '',
+    loading: true,
+  };
+  const [state, dispatch] = useReducer(adviceReducer, initialState);
 
-    const newAdvice = async () => {
-        dispatch({ type: SET_LOADING });
-        try {
-            const { data } = await axios.get(`https://api.adviceslip.com/advice`);
-            dispatch({ type: SET_ADVICE, payload: data.slip });
-        } catch (error) {
-            dispatch({ type: SET_ADVICE, payload: { id: 404, advice: ' - No advice found. - ' } });
-        }
-    };
+  const newAdvice = async () => {
+    dispatch({ type: SET_LOADING });
+    try {
+      const [{ data }] = await Promise.all([
+        axios.get(`https://api.adviceslip.com/advice`),
+        // Delay response by 2 sec to show dice animation
+        new Promise((resolve) => {
+          setTimeout(resolve, 2000);
+        }),
+      ]);
 
-    return (
-        <AdviceContext.Provider
-            value={{
-                ...state,
-                newAdvice,
-            }}
-        >
-            {children}
-        </AdviceContext.Provider>
-    );
+      dispatch({ type: SET_ADVICE, payload: data.slip });
+    } catch (error) {
+      dispatch({
+        type: SET_ADVICE,
+        payload: { id: 404, advice: ' - No advice found. - ' },
+      });
+    }
+  };
+
+  return (
+    <AdviceContext.Provider
+      value={{
+        ...state,
+        newAdvice,
+      }}
+    >
+      {children}
+    </AdviceContext.Provider>
+  );
 };
 
 export default AdviceContext;
